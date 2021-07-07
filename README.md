@@ -23,7 +23,7 @@ Inspiration taken from:
 ```py
 from Sudoku import SudokuBoardGenerator, SudokuBoardSolver, print_board
 
-puzzle = SudokuBoardGenerator()    # Initializion.
+puzzle = SudokuBoardGenerator()    # Generator initializion.
 puzzle.generate_unsolved_board(5)  # Sudoku board generation (difficulty = 5 attempts).
 print_board(puzzle.board)          # Printing the result.
 
@@ -50,7 +50,7 @@ from Sudoku import SudokuBoardGenerator, SudokuBoardSolver, print_board
 
 # using the generated "puzzle"
 puzzle = SudokuBoardGenerator()          # Generator initializion.
-puzzle.generate_unsolved_board(5)        # Sudoku board generation.
+puzzle.generate_unsolved_board(5)        # Sudoku board generation (difficulty = 5 attempts).
 
 solver = SudokuBoardSolver(puzzle.board) # Solver initializion.
 solver.solve_board()                     # Sudoku board solution.
